@@ -2,6 +2,25 @@
 
 - Awe is a curated collection of standalone, interactive Material 3 desktop widgets built with [Quickshell](https://quickshell.outfoxxed.me/) for Linux and Wayland compositors.
 
+## MJW desktop widget set (`plugins/`)
+
+The end4-PC desktop widgets, ported to Ryoku as plugin packages and published in
+the [Ryostore](https://github.com/ryoku-dev/ryostore) catalogue:
+
+`mjw-clock`, `mjw-calendar`, `mjw-worldclock`, `mjw-media`, `mjw-notes`,
+`mjw-todo`, `mjw-timer`, `mjw-visualizer`, `mjw-weather`, `mjw-resources`,
+`mjw-usercard`, `mjw-text`, `mjw-image`, `mjw-sticker`, `mjw-image-converter`.
+
+Each folder under `plugins/` is one package: `manifest.json` for the host,
+`content/` for the widget's QML and its own config/persistence, `service/` for
+anything it runs, `assets/` for its preview. They install through Ryostore and
+run on the Ryoku desktop; the widgets at the repository root are the standalone
+Awe shell and are unaffected.
+
+`plugins/**` is ported from end4-pC and is therefore GPL-3.0-only, with its own
+`LICENSE`, `NOTICE` and `PROVENANCE.md` in each folder. The Boost licence at the
+repository root covers the standalone shell only.
+
 - Each widget is an independent QML component that can be moved, scaled, customized, and toggled across your desktop with persistent configuration.
 
 ## All Widgets
